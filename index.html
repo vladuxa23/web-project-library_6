@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- description - описание страницы -->
+    <meta name="description" content="Описание страницы">
+    <!-- Ключевые слова -->
+    <meta name="keywords" content="Описание страницы">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Amatic+SC&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+    <link rel="manifest" href="img/ico/site.webmanifest">
+    <link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <title>МУК "ЦБС" Библиотека №6</title>
+
+</head>
+
+<body>
+
+    <!--SVG sprite-->
+    <svg style="display:none;">
+        <symbol id="vk" viewBox="0 0 512 512">
+            <path style="fill:#6F75E3;" d="M389.115,125.883L182.253,6.45c-13.066-7.544-24.905-8.245-33.454-3.277L90.411,37.104
+            c0.027-0.016,0.057-0.028,0.085-0.045C82.008,41.943,76.74,52.388,76.697,67.26l-0.674,237.702
+            c-0.085,29.835,20.898,66.178,46.862,81.168l206.863,119.432c13.441,7.759,25.573,8.262,34.17,2.818
+            c-0.239,0.151-0.472,0.314-0.718,0.458l58.386-33.93c8.44-4.905,13.672-15.333,13.715-30.155l0.674-237.702
+            C436.062,177.209,415.079,140.873,389.115,125.883z" />
+            <g style="enable-background:new;">
+                <path style="fill:#FFFFFF;" d="M235.905,210.795l-34.714-20.042c-4.63-2.673-6.958-1.948-9.436-0.048
+                c-1.433,1.099-1.868,2.1,1.062,4.441c5.752,4.574,8.988,10.739,9.826,17.857c1.358,11.423,1.228,21.996,0.403,32.194
+                c-0.248,2.956-0.727,5.805-1.8,8.081c-1.05,2.236-2.498,2.834-4.3,1.794c-1.092-0.63-2.313-1.862-3.655-3.696
+                c-3.21-4.393-5.469-9.293-7.673-14.172c-8.287-18.318-14.881-36.725-20.262-55.177c-1.561-5.333-4.246-9.565-8.321-11.988
+                c-5.019-2.995-10.032-5.943-15.043-8.837c-5.011-2.893-10.021-5.732-15.033-8.511c-6.034-3.369-7.841-1.028-5.405,6.674
+                c10.839,34.195,22.915,68.351,38.7,102.206c8.112,17.382,17.447,33.997,29.492,48.899c12.108,14.98,25.055,25.489,38.657,33.343
+                c1.745,1.007,3.503,1.972,5.268,2.896c7.269,3.815,9.459,2.886,9.815-5.23c0.255-5.563,0.827-10.898,3.28-14.607
+                c1.489-2.247,3.443-2.673,5.705-1.367c1.405,0.811,2.929,2.291,4.534,4.419c2.094,2.78,3.84,5.769,5.516,8.842
+                c4.075,7.503,7.995,15.077,12.232,22.514c4.838,8.486,10.518,15.317,17.503,19.35c0.665,0.383,1.342,0.743,2.03,1.074
+                l30.724,17.756c4.939,2.47,7.536-3.011,4.707-10.985c-1.994-5.617-4.606-11.096-7.364-16.533
+                c-6.249-12.258-13.612-23.906-20.579-35.788c-6.291-10.71-6.681-15.047-1.581-20.254c5.549-5.721,11.539-10.832,17.134-16.482
+                c5.232-5.291,10.587-10.468,13.354-18.799c1.762-5.314,0.227-8.989-5.403-13.341c-0.956-0.747-1.959-1.344-2.955-1.918
+                l-33.409-19.317c-0.093-0.055-0.185-0.11-0.276-0.163c-3.947-2.278-6.159-1.486-7.588,1.802c-1.976,4.534-4.021,9.028-6.382,13.126
+                c-5.336,9.343-11.304,17.896-19.649,23.235c-1.549,0.986-3.234,2.308-5.548,0.972c-0.44-0.254-0.903-0.604-1.392-1.07
+                c-3.831-3.827-4.936-11.739-4.867-14.151l0.095-44.33C242.575,218.714,241.372,215.195,235.905,210.795" />
+            </g>
+            <g style="enable-background:new;">
+                <path style="fill:#7C84E7;" d="M421.588,474.907l-58.386,33.93c8.44-4.905,13.674-15.333,13.715-30.155l58.386-33.93
+                C435.261,459.573,430.027,470.002,421.588,474.907z" />
+                <g>
+                    <path style="fill:#989FED;" d="M90.411,37.104l58.386-33.93c8.549-4.968,20.388-4.267,33.454,3.277l-58.386,33.93
+                    C110.799,32.837,98.961,32.135,90.411,37.104z" />
+                    <polygon style="fill:#989FED;" points="377.591,240.981 435.977,207.05 435.303,444.752 376.917,478.682 		" />
+                </g>
+                <polygon style="fill:#A8ADEF;" points="123.866,40.381 182.253,6.45 389.115,125.883 330.729,159.813 	" />
+                <path style="fill:#C5C8F5;" d="M330.729,159.813l58.386-33.93c25.965,14.99,46.946,51.327,46.862,81.168l-58.386,33.93
+                C377.676,211.14,356.693,174.804,330.729,159.813z" />
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img class="header__img" src="img/library-logo.png" alt="">
+                </div>
+
+                <nav class="nav">
+                    <a class="nav__link" href="#" data-scroll="#news">События</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Наше творчество</a>
+                    <a class="nav__link" href="#" data-scroll="#team">О нас</a>
+                    <a class="nav__link" href="#" data-scroll="#feedback">Отзывы</a>
+                    <a class="nav__link" href="#" data-scroll="#footer">Контакты</a>
+                </nav>
+
+                <button class="burger" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+    <!-- intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Добро пожаловать</h1>
+                <h2 class="intro__subtitle">Вы находитесь на официальном сайте библиотеки №6 г.Волгодонска</h2>
+                <a class="btn  btn--red" href="#">Узнать больше</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- news -->
+    <div class="container" id="news">
+        <h2 class="news__header">События</h2>
+        <div class="news">
+            <div class="news__item">
+                <img class="news__icon" src="img/news/bunin.jpg" alt="" width=200px>
+                <h4 class="news__title">Иван Бунин: жизнь, судьба, творчество</h4>
+                <div class="news__text">22 октября 2020 года исполнилось 150 лет со дня рождения
+                    Ивана Алексеевича Бунина – классика русского реализма,
+                    поэта и переводчика, первого лауреата Нобелевской премии
+                    по литературе в России. В библиотеках города к юбилею
+                    писателя прошел цикл онлайн и оффлайн мероприятий.
+                </div>
+
+                <a class="news__link" href="#">Подробнее</a>
+            </div>
+
+            <div class="news__item">
+                <img class="news__icon" src="img/news/edict.jpg" alt="" width=200px>
+                <h4 class="news__title">От слов – к действию! Прими участие в экологическом диктанте!</h4>
+                <div class="news__text">В социальных сетях с 15 по 16 ноября пройдет Всероссийский
+                    экологический диктант, приуроченный ко Всемирному дню вторичной
+                    переработки отходов (рециклинга)
+                </div>
+
+                <a class="news__link" href="#">Подробнее</a>
+            </div>
+
+            <div class="news__item">
+                <img class="news__icon" src="img/news/nahal.jpg" alt="" width=200px>
+                <h4 class="news__title">Клуб «Нахаленок»: встречи в новом формате</h4>
+                <div class="news__text">После продолжительных каникул возобновил свою
+                    работу краеведческий клуб «Нахаленок» в библиотеке
+                    для детей №11. Библиотекари подготовили для дошколят
+                    различные мероприятия и попробовали дистанционный
+                    формат взаимодействия на платформе Zoom.
+                </div>
+
+                <a class="news__link" href="#">Подробнее</a>
+            </div>
+
+            <div class="news__item">
+                <img class="news__icon" src="img/news/vern.jpg" alt="" width=200px>
+                <h4 class="news__title">Виртуальный вернисаж в юношеской библиотеке</h4>
+                <div class="news__text">Осень – прекрасное и романтичное время года. Обилие
+                    теплых и ярких цветов, золотисто-красный шуршащий ковер
+                    из листьев под ногами, прелые запахи трав и крики спешащих
+                    на юг птиц, – вся эта красота не может не восхищать.
+                </div>
+
+                <a class="news__link" href="#">Подробнее</a>
+            </div>
+
+            <div class="news__item">
+                <img class="news__icon" src="img/news/vstrecha.jpg" alt="" width=200px>
+                <h4 class="news__title">Вечер-встреча «Роятся, словно привиденья мысли…»</h4>
+                <div class="news__text">24 октября сотрудники отдела обслуживания центральной
+                    библиотеки в рамках клуба интересных встреч «Автограф»
+                    провели встречу «Роятся, словно привиденья мысли…» с
+                    поэтом и иллюстратором детских книг Раисой Абрамовной
+                    Сергеевой.
+                </div>
+
+                <a class="news__link" href="#">Подробнее</a>
+            </div>
+
+            <div class="news__item">
+                <img class="news__icon" src="img/news/esen.jpg" alt="" width=200px>
+                <h4 class="news__title">Стихи Есенина читали на разных языках мира</h4>
+                <div class="news__text">К юбилею писателя специалисты библиотеки №10 МУК
+                    «Централизованная библиотечная система» г. Волгодонска
+                    организовали и провели акцию«России стихотворная душа...».
+                </div>
+
+                <a class="news__link" href="#">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    <!-- /news -->
+
+    <!--works-->
+    <div class="container" id="works">
+        <div class="news__header">Наше творчество</div>
+    </div>
+
+    <div class="works">
+        <div class="works__item">
+            <img class="works__photo" src="img/diy/diy1.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Мастер-класс по изготовлению индейских амулетов</div>
+                <div class="works__text">Стань Чингачгуком XXI века.</div>
+
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/diy/diy2.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">8 интересных способов применения липкой ленты</div>
+                <div class="works__text">Нужо больше изоленты!!!</div>
+
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/diy/diy3.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Мастерим поделки из лапника</div>
+                <div class="works__text">Главное не попасть под статью за сбор</div>
+
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/diy/diy4.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Вяжем китайскими палочками</div>
+                <div class="works__text">ДА! - переработке. Вторая жизнь палочкам для суши</div>
+
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/diy/diy5.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Новый год не за горами</div>
+                <div class="works__text">Создаем новогоднюю гирлянду-бусы</div>
+
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/diy/diy6.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Весенний ледоход</div>
+                <div class="works__text">Вспоминаем детсво. Мастерим свою "Беду"</div>
+
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/diy/diy7.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Вяжем с нами</div>
+                <div class="works__text">Или мы что-то свяжем или всё растащит кот</div>
+
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/diy/diy8.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Познаем дзен</div>
+                <div class="works__text">Рисуем природу осенним вечером</div>
+            </div>
+        </div>
+
+    </div>
+    <!--/works-->
+
+    <!--team-->
+    <div class="team" id="team">
+        <div class="container">
+            <div class="news__header">О нас</div>
+            <div class="team__inner">
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/1.jpg" alt="">
+                    <div class="team__name">Галина Навоева</div>
+                    <div class="team__prof">Управление, главная<br><br></div>
+                    <div class="team__text">
+                        <p>Самый главный массовик-затейник. Разруливает абсолютно любые вопросы</p>
+                    </div>
+                    <div class="social">
+                        <div class="social__follow">Мой контакт</div>
+                        <a href="#" class="social__item" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/4.jpg" alt="">
+                    <div class="team__name">Елена Федянина</div>
+                    <div class="team__prof">Отдел библиотечного обслуживания, библиотекарь</div>
+                    <div class="team__text">
+                        <p>Самый главный книжный критик библиотеки. Ответит на любой вопрос,
+                            по интересующему произведению.</p>
+                    </div>
+                    <div class="social">
+                        <div class="social__follow">Мой контакт</div>
+                        <a href="#" class="social__item" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/3.jpg" alt="">
+                    <div class="team__name">Ирина Опарина</div>
+                    <div class="team__prof">Отдел информационных технологий,<br>IT-специалист</div>
+                    <div class="team__text">
+                        <p>Самый главный photoshop и SonyVegasPro мастер нашей библиотеки.
+                            Может смонтировать не монтируемое видео для любого мероприятия</p>
+                    </div>
+                    <div class="social">
+                        <div class="social__follow">Мой контакт</div>
+                        <a href="#" class="social__item" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/2.jpg" alt="">
+                    <div class="team__name">Татьяна Кондакова</div>
+                    <div class="team__prof">Отдел литературы по искусству,<br>старший искуствовед</div>
+                    <div class="team__text">
+                        <p>Самый главный искуствовед нашей команды. Если у вас евсть вопросы по искусству у Татьяны есть на них ответ.</p>
+                    </div>
+
+                    <div class="social">
+                        <div class="social__follow">Мой контакт</div>
+                        <a href="#" class="social__item" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--/team-->
+
+    <!-- feedback -->
+    <div class="feedback" id="feedback">
+        <div class="container">
+            <div class="feedback__slider" id="feedbackSlider">
+
+                <div>
+                    <div class="feedback__item">
+                        <div class="feedback__photo">
+                            <img class="feedback__img" src="img/feedback/1.jpg" alt="">
+                        </div>
+                        <div class="feedback__content">
+                            <div class="feedback__text"> - "Часто захожу в эту библиотеку, когда иду
+                                домой. Здесь всегда есть свежая "пища для ума".
+                                Квалифицированный персонал, всегда подскажет
+                                интересные произведения, для проведения хорошего
+                                вечера за кружкой ароматного кофе или бокала
+                                столового вина. Спасибо людям, что делают такую работу."</div>
+                            <div class="feedback__author">Мария Миронова. Д/С "Ромашка". Группа "Земляничка". 5 лет.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="feedback__item">
+                        <div class="feedback__photo">
+                            <img class="feedback__img" src="img/feedback/1.jpg" alt="">
+                        </div>
+                        <div class="feedback__content">
+                            <div class="feedback__text"> - "ssdfsdfsdfs
+                                домой. Здесь всегда есть свежая "пища для ума".
+                                Квалифицированный персонал, всегда подскажет
+                                интересные произведения, для проведения хорошего
+                                вечера за кружкой ароматного кофе или бокала
+                                столового вина. Спасибо людям, что делают такую работу."</div>
+                            <div class="feedback__author">Мария Миронова. Д/С "Ромашка". Группа "Земляничка". 5 лет.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /feedback -->
+
+    <!-- mainlibrary -->
+    <div class="mainlibrary">
+        <div class="container">
+            <h3 class="mainlibrary__title">Мы являемся частью МУК «Централизованная библиотечная система» г. Волгодонска</h3>
+            <div class="mainlibrary__subtitle">
+                <p>Для того, чтобы посетить основной сайт ЦБС, нажмите на кнопку ниже</p>
+
+
+            </div>
+            <a class="btn  btn--red  btn--long" href="#">Посетить сайт ЦБС</a>
+        </div>
+    </div>
+    <!-- /mainlibrary -->
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <div class="footer__block">
+                    <h4 class="footer__title">Наш адрес</h4>
+                    <address class="footer__adress">
+                        <div>347386, г.Волгодонск,</div>
+                        <div>ул.Гагарина, д.75а</div>
+                    </address>
+                </div>
+
+                <div class="footer__block">
+                    <h4 class="footer__title">Наши контакты</h4>
+                    <div class="footer__adress">Телефон:</div>
+                    <div class="footer__phone">
+                        <a class="footer__number" href="tel: +78639232629">+7 (8639) 23-26-29</a>
+                    </div>
+                    <div class="footer__adress">Соц. сети</div>
+                    <div class="social__footer">
+                        <a href="#" class="social__item__footer" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__block">
+                    <h4 class="footer__title">Мы в системе ЦБС</h4>
+                    <div>
+                        <a href="http://www.vdonlib.ru/" target="_blank">
+                            <img class="footer__cbs__image" src="img/ico/logo_cbs.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__text">
+                    <div>Copyright © 2020 CBSLibrary_6. All Rights Reserved</div>
+                    <div>Made by <span>Vladuxa_23</span></div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="scripts/app.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</body>
+
+</html>
